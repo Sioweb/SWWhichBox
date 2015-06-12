@@ -1,0 +1,7 @@
+<?php $this->extend('block_unsearchable'); ?>
+<?php $this->block('content'); ?>
+<ul>
+	<li data-id="0">Zufalls-Song?</li>
+	<?php if($this->songs) echo implode('',$this->songs);?>
+</ul>
+<?php $this->endblock(); ?>

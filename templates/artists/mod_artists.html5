@@ -1,0 +1,4 @@
+<?php $this->extend('block_unsearchable'); ?>
+<?php $this->block('content'); ?>
+<?php if($this->artists) echo '<ul>'.implode('',$this->artists).'</ul>';?>
+<?php $this->endblock(); ?>

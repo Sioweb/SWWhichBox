@@ -1,0 +1,16 @@
+
+<?php if(\Input::post('getNewWhishes') != 1) $this->extend('block_unsearchable'); ?>
+<?php $this->cssID = ' id="newWhishes" data-pageid="'.$this->pageid.'" data-filter="all" ';?>
+<?php $this->block('content'); ?>
+<?php if(\Input::post('getNewWhishes') != 1):?>
+<?php echo $this->filter;?>
+<?php endif;?>
+<?php if($this->startDate):?>
+<p>Start: <?php echo $this->startDate;?></p>
+<?php endif;?>
+<?php if($this->listType):?>
+<<?php echo $this->listType;?>>
+<?php endif;?>
+<?php echo implode('',$this->whishes);?>
+<?php if($this->listType):?></<?php echo $this->listType[0];?>><?php endif;?>
+<?php $this->endblock(); ?>

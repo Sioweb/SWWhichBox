@@ -1,0 +1,18 @@
+<ul class="whish_filter">
+	<li>Filtern nach:</li>
+	<li data-filter="all">Zurücksetzen</<li>
+	<li data-filter="ungrant">Unerfüllte Wünsche<li>
+	<li data-filter="today">Wünsche heute</li>
+	<li data-filter="yesterday">Letzte Tage</li>
+</ul>
+<ul class="whish_count">
+	<li>Anzahl laden:</li>
+	<li>
+		<select name="whish_count">
+			<option value="10">10</option>
+			<option value="25">25</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+		</select>
+	<li>
+</ul>

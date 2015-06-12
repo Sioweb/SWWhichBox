@@ -1,0 +1,20 @@
+<div data-whish="<?php echo $this->id;?>" data-artistsong="<?php echo md5($this->Interpret.$this->Lied);?>" id="whish_<?php echo $this->id;?>">
+	<div class="buttons">
+		<a class="granting" data-whish="<?php echo $this->id;?>" href="{{link_url::<?php echo $this->pageid;?>}}?tw=<?php echo $this->id;?>" title="Wurde dieser Wunsch bereits erfüllt?">
+			<img src="system/modules/SWRadioWhishbox/assets/<?php echo $this->icon['grants'];?>" title="Hier klicken um den Wunsch umzustellen" alt="Hier klicken um den Wunsch umzustellen" />
+		</a>
+		<a class="artistSong" data-whish="<?php echo $this->id;?>" href="{{link_url::<?php echo $this->pageid;?>}}?tw=<?php echo $this->id;?>" title="Gehören Interpret und Lied zusammen?">
+			<img src="system/modules/SWRadioWhishbox/assets/<?php echo $this->icon['artistSong'];?>" title="Hier klicken, wenn das Lied zum Interpreten gehört." alt="Hier klicken um zu bestätigen." />
+		</a>
+	</div>
+	<ul>
+		<li><?php echo $this->createdAt;?></li>
+		<li><span>Name:</span><?php echo $this->Name;?></li>
+		<li><span>Herkunft:</span><?php echo $this->Herkunft;?></li>
+		<li data-type="artist" class="artist"><span>Interpret:</span><?php echo $this->Interpret;?></li>
+		<li data-type="song" class="song"><span>Lied:</span><?php echo $this->Lied;?></li>
+		<?php if($this->Anmerkungen):?>
+		<li class="text"><?php echo $this->Anmerkungen;?></li>
+		<?php endif;?>
+	</ul>
+</div>
