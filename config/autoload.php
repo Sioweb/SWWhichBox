@@ -23,22 +23,22 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// classes
-	'sioweb\contao\extensions\whishbox\Song'			=> 'system/modules/SWRadioWhishbox/classes/Song.php',
-	'sioweb\contao\extensions\whishbox\Artist'			=> 'system/modules/SWRadioWhishbox/classes/Artist.php',
-	'sioweb\contao\extensions\whishbox\LoadWhishes'		=> 'system/modules/SWRadioWhishbox/classes/LoadWhishes.php',
-	'sioweb\contao\extensions\whishbox\Whishbox'		=> 'system/modules/SWRadioWhishbox/classes/Whishbox.php',
+	'sioweb\contao\extensions\whishbox\Song'			=> 'system/modules/Wunschbox/classes/Song.php',
+	'sioweb\contao\extensions\whishbox\Artist'			=> 'system/modules/Wunschbox/classes/Artist.php',
+	'sioweb\contao\extensions\whishbox\LoadWhishes'		=> 'system/modules/Wunschbox/classes/LoadWhishes.php',
+	'sioweb\contao\extensions\whishbox\Whishbox'		=> 'system/modules/Wunschbox/classes/Whishbox.php',
 
 	// models
-	'sioweb\contao\extensions\whishbox\SongModel'		=> 'system/modules/SWRadioWhishbox/models/SongModel.php',
-	'sioweb\contao\extensions\whishbox\ArtistModel'		=> 'system/modules/SWRadioWhishbox/models/ArtistModel.php',
-	'sioweb\contao\extensions\whishbox\ArtistSongModel'	=> 'system/modules/SWRadioWhishbox/models/ArtistSongModel.php',
-	'sioweb\contao\extensions\whishbox\WunschboxModel'	=> 'system/modules/SWRadioWhishbox/models/WunschboxModel.php',
+	'sioweb\contao\extensions\whishbox\SongModel'		=> 'system/modules/Wunschbox/models/SongModel.php',
+	'sioweb\contao\extensions\whishbox\ArtistModel'		=> 'system/modules/Wunschbox/models/ArtistModel.php',
+	'sioweb\contao\extensions\whishbox\ArtistSongModel'	=> 'system/modules/Wunschbox/models/ArtistSongModel.php',
+	'sioweb\contao\extensions\whishbox\WunschboxModel'	=> 'system/modules/Wunschbox/models/WunschboxModel.php',
 
 	// modules
-	'sioweb\contao\extensions\whishbox\GetWhishes'		=> 'system/modules/SWRadioWhishbox/modules/GetWhishes.php',
+	'sioweb\contao\extensions\whishbox\GetWhishes'		=> 'system/modules/Wunschbox/modules/GetWhishes.php',
 
 	// Library
-	'Model\QueryBuilder'		=> 'system/modules/SWRadioWhishbox/library/Contao/Model/QueryBuilder.php',
+	'Model\QueryBuilder'		=> 'system/modules/Wunschbox/library/Contao/Model/QueryBuilder.php',
 ));
 
 
@@ -47,14 +47,14 @@ ClassLoader::addClasses(array
  */
 TemplateLoader::addFiles(array
 (
-	'mod_whishlist'   	=> 'system/modules/SWRadioWhishbox/templates',
-	'whish_default'   	=> 'system/modules/SWRadioWhishbox/templates/whish',
-	'whish_toplist'   	=> 'system/modules/SWRadioWhishbox/templates/whish',
-	'whish_filter'   		=> 'system/modules/SWRadioWhishbox/templates/whish',
+	'mod_whishlist'   	=> 'system/modules/Wunschbox/templates',
+	'whish_default'   	=> 'system/modules/Wunschbox/templates/whish',
+	'whish_toplist'   	=> 'system/modules/Wunschbox/templates/whish',
+	'whish_filter'   		=> 'system/modules/Wunschbox/templates/whish',
 
-	'mod_artists'   	=> 'system/modules/SWRadioWhishbox/templates/artists',
-	'artist_default'   	=> 'system/modules/SWRadioWhishbox/templates/artists',
+	'mod_artists'   	=> 'system/modules/Wunschbox/templates/artists',
+	'artist_default'   	=> 'system/modules/Wunschbox/templates/artists',
 
-	'mod_songs'   		=> 'system/modules/SWRadioWhishbox/templates/songs',
-	'song_default'   	=> 'system/modules/SWRadioWhishbox/templates/songs',
+	'mod_songs'   		=> 'system/modules/Wunschbox/templates/songs',
+	'song_default'   	=> 'system/modules/Wunschbox/templates/songs',
 ));
